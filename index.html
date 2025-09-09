@@ -74,12 +74,13 @@
         <div class="col-lg-5 mt-4 mt-lg-0">
           <div class="bg-white text-dark rounded-2xl p-4 shadow-soft">
             <h5 class="mb-3"><i class="bi bi-calendar-event"></i> Book a Campus Tour</h5>
-            <form class="row g-3">
-              <div class="col-md-6"><input class="form-control" placeholder="Parent Name" required></div>
-              <div class="col-md-6"><input type="tel" class="form-control" placeholder="Phone" required></div>
-              <div class="col-md-6"><input type="email" class="form-control" placeholder="Email"></div>
-              <div class="col-md-6"><input type="date" class="form-control" placeholder="Preferred Date"></div>
-              <div class="col-12"><input class="form-control" placeholder="Child's Name & Class"></div>
+            <form action="https://api.web3forms.com/submit" method="POST" class="row g-3">
+              <input type="hidden" name="access_key" value="cbb14c54-8068-49e4-b32e-a27256421473">
+              <div class="col-md-6"><input name="name" class="form-control" placeholder="Parent Name" required></div>
+              <div class="col-md-6"><input name="phone" type="tel" class="form-control" placeholder="Phone" required></div>
+              <div class="col-md-6"><input name="email" type="email" class="form-control" placeholder="Email"></div>
+              <div class="col-md-6"><input name="date" type="date" class="form-control" placeholder="Preferred Date"></div>
+              <div class="col-12"><input name="child" class="form-control" placeholder="Child's Name & Class"></div>
               <div class="col-12 d-grid"><button class="btn btn-primary" type="submit">Request Slot</button></div>
               <small class="text-secondary">We typically respond within 1–2 working days.</small>
             </form>
@@ -485,4 +486,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
