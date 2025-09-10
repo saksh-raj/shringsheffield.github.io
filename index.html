@@ -74,8 +74,7 @@
         <div class="col-lg-5 mt-4 mt-lg-0">
           <div class="bg-white text-dark rounded-2xl p-4 shadow-soft">
             <h5 class="mb-3"><i class="bi bi-calendar-event"></i> Book a Campus Tour</h5>
-            <form action="https://api.web3forms.com/submit" method="POST" class="row g-3">
-              <input type="hidden" name="access_key" value="cbb14c54-8068-49e4-b32e-a27256421473">
+            <form name="campus-tour" method="POST" class="row g-3" netlify>
               <div class="col-md-6"><input name="name" class="form-control" placeholder="Parent Name" required></div>
               <div class="col-md-6"><input name="phone" type="tel" class="form-control" placeholder="Phone" required></div>
               <div class="col-md-6"><input name="email" type="email" class="form-control" placeholder="Email"></div>
@@ -408,14 +407,12 @@
         <div class="col-lg-6">
           <h2 class="fw-bold mb-3">Get in Touch</h2>
           <p class="mb-4">Have questions about admissions, curriculum, or transport? Send us a message and we’ll respond promptly.</p>
-          <form action="https://api.web3forms.com/submit" method="POST" class="row g-3 bg-white text-dark p-4 rounded-2xl shadow-soft">
-            <input type="hidden" name="access_key" value="cbb14c54-8068-49e4-b32e-a27256421473">
+          <form name="contact-us" class="row g-3 bg-white text-dark p-4 rounded-2xl shadow-soft" netlify>
             <div class="col-md-6"><label class="form-label">Your Name</label><input name="name" type="text" class="form-control" required></div>
             <div class="col-md-6"><label class="form-label">Email</label><input name="email" type="email" class="form-control"></div>
             <div class="col-md-6"><label class="form-label">Phone</label><input name="tel" type="tel" class="form-control" required></div>
             <div class="col-md-6"><label class="form-label">Subject</label><input name="subject" class="form-control"></div>
             <div class="col-12"><label class="form-label">Message</label><textarea name="message" class="form-control" rows="4"></textarea></div>
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
             <div class="col-12 d-grid"><button type="submit" class="btn btn-primary"><i class="bi bi-send"></i> Send Message</button></div>
           </form>
         </div>
