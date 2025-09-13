@@ -473,7 +473,8 @@
           <h2 class="fw-bold mb-3">Get in Touch</h2>
           <p class="mb-4">Have questions about admissions, curriculum, or transport? Send us a message and we’ll respond
             promptly.</p>
-          <form class="row g-3">
+                      <form action="https://api.web3forms.com/submit" method="POST" class="row g-3">
+            <input type="hidden" name="access_key" value="cbb14c54-8068-49e4-b32e-a27256421473">
             <div class="col-md-6">
               <label class="form-label">Your Name</label>
               <input type="text" name="name" class="form-control" required>
@@ -494,11 +495,11 @@
               <label class="form-label">Message</label>
               <textarea name="message" class="form-control" rows="4"></textarea>
             </div>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
             <div class="col-12 d-grid">
               <button type="submit" class="btn btn-primary">Send Message</button>
             </div>
           </form>
-
         </div>
         <div class="col-lg-6">
           <div class="bg-white text-dark p-4 rounded-2xl shadow-soft h-100">

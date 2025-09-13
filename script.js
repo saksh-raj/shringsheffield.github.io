@@ -13,6 +13,6 @@
 
     // Simple fake form handlers (prevent page jump)
     document.querySelectorAll('form').forEach(f => f.addEventListener('submit', e => {
-      e.preventDefault();
+      // e.preventDefault();
       alert('Thank you! Your form has been received.');
     }));
