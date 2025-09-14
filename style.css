@@ -10,7 +10,8 @@
     .section-title .bar{width:80px;height:4px;background:var(--accent);display:block;border-radius:10px;margin:12px auto 0}
     .navbar-brand span{font-weight:700}
     .shadow-soft{box-shadow:0 10px 25px rgba(0,0,0,.06)}
-    .hero-overlay{background:linear-gradient(180deg, rgba(13,110,253,.35), rgba(13,110,253,.55)), url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;}
+    .hero-overlay{
+      background:linear-gradient(180deg, rgba(13,110,253,.35), rgba(13,110,253,.55)), url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;}
     .hero-min{min-height:72vh}
     .badge-accent{background:var(--accent);}
     .feature-icon{font-size:2rem}
@@ -28,11 +29,4 @@
     .bg-light-ink{background:#f8fafc}
     .rounded-2xl{border-radius:1.25rem}
 
-    .marquee span {
-  white-space: nowrap;
-  animation: scroll 20s linear infinite;
-}
-@keyframes scroll {
-  from { transform: translateX(100%); }
-  to { transform: translateX(-100%); }
-}
+    
